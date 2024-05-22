@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: skyblue;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .star {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            position: relative;
+            top: 40px;
+            animation: shinning 2s infinite;
+        }
+
+        .starboy {
+            width: 350px;
+            height: 300px;
+            background-color: brown;
+            animation: shinning 5s 3s infinite ease-in-out;
+            position: relative;
+            right: 350px;
+            transform: translateX(120px);
+            animation: shinning 2s infinite;
+        }
+
+        .starlink {
+            background-color: bisque;
+            width: 90px;
+            height: 90px;
+            position: relative;
+            top: 150px;
+            right: 500px;
+            animation: shinning 2s infinite;
+        }
+
+        .starcity {
+            background-color: black;
+            width: 70px;
+            height: 70px;
+            position: relative;
+            left: 400px;
+            animation: shinning 2s infinite;
+        }
+
+        .starleader {
+            background-color: rgb(252, 6, 6);
+            width: 200px;
+            height: 150px;
+            position: relative;
+            left: 410px;
+            transform: translateX(100px);
+            animation: shinning 2s infinite;
+        }
+
+        .starmelvin {
+            background-color: green;
+            width: 200px;
+            height: 150px;
+            position: relative;
+            right: 400px;
+            transform: translateX(100px);
+            animation: shinning 2s infinite;
+        }
+
+        .mainStar {
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .diamond2 {
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+
+        .diamondcity {
+            bottom: 700px;
+            right: 20px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 80px solid rgb(106, 8, 225);
+            position: relative;
+            animation: shinning 4s infinite;
+        }
+
+        .diamond {
+            width: 120px;
+            height: 120px;
+            top: -500px;
+            /* bottom: 120px;
+            right: 120px; */
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 80px solid blue;
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+
+        @keyframes shinning {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 3;
+                box-shadow: 0 0 50px black;
+                transform: scale(1);
+                background-color: aqua;
+
+            }
+
+            60% {
+                /* transform: rotate(120deg); */
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="star"> </div>
+    <div class="mainStar starboy"> </div>
+    <div class="mainStar starlink"> </div>
+    <div class="mainStar starcity"> </div>
+    <div class="mainStar starleader"> </div>
+    <div class="mainStar starmelvin"> </div>
+    <div class="starmelly"> </div>
+    <div class="diamond"> </div>
+    <div class="diamond2 diamondcity"> </div>
+</body>
+
+</html>

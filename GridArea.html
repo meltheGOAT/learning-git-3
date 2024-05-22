@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.gridcontain {
+    display: grid;
+    background-color: rgb(106, 89, 203);
+    gap: 8px;
+    grid-template-areas: 'topheader topheader topheader topheader topheader'
+    'bodymenu topmain topmain topmain bodyright'
+    'bodymenu bodyfoot bodyfoot bodyfoot bodyfoot';
+    padding: 8px;
+}
+.gridcontain > div {
+    color: white;
+    background-color: orangered;
+    font-weight: bold;
+    text-align: center;
+}
+.item1 {
+grid-area: topheader;
+}
+
+.item2 {
+    grid-area: bodymenu;
+}
+
+.item3 {
+    grid-area: topmain;
+}
+.item4 {
+    grid-area: bodyright;
+}
+.item5 {
+grid-area: bodyfoot;
+}
+
+    </style>
+</head>
+<body>
+    <div class="gridcontain">
+<div class="item1">header</div>
+<div class="item2">Menu</div>
+<div class="item3">Main</div>
+<div class="item4">Right</div>
+<div class="item5">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation demo</title>
+    <style>
+        .Show1 {
+            background-color: goldenrod;
+            width: 100px;
+            height: 120px;
+            margin-bottom: 12px;
+            animation-name: color-change;
+            animation-duration: 10s;
+            border-radius: 90%;
+            transition: transform;
+        }
+
+        .Show2 {
+            width: 120px;
+            height: 150px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: red;
+            animation-name: color-change;
+            animation-duration: 06s;
+        }
+
+        @keyframes color-change {
+            from {
+                background-color: rgb(36, 5, 241);
+
+            }
+
+            to {
+                background-color: greenyellow;
+                border-radius: 50%;
+                transition: transform 5s;
+                transform: rotate(150deg)
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Use of animation</h2>
+    <div class="Show1">
+
+    </div>
+    <div class="Show2">
+        <img src="WhatsApp Image 2024-03-25 at 08.31.35_e4ff097a.jpg" alt="" width="100px">
+    </div>
+</body>
+
+</html>

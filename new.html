@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 900px;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: cyan;
+            text-shadow: 1px 2px 13px blue;
+            animation-name: melvin;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            overflow: hidden;
+        }
+
+        @keyframes melvin {
+            0% {
+                transform: translateX(0px) rotateY(0deg);
+            }
+
+            20% {
+                transform: scaleX(30px)
+            }
+
+            50% {
+                transform: translateX(320px) rotateY(180deg);
+            }
+
+            100% {
+                transform: scaleX(100px) translateX(5000px) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> MELVIN OJIEGO </h1>
+
+
+</body>
+
+</html>

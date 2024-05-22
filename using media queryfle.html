@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --goldlike: #af3a3c
+}
+        .contain {
+            display: flex;
+        }
+
+        .contain>div {
+            background-color:var(--goldlike);
+            margin: 8px;
+            padding: 30px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .contain>div:hover {
+            background-color: rgb(162, 107, 5);
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 430px) {
+            .contain {
+                flex-direction: column;
+            }
+            .img {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .contain > div {
+                width: 100%
+            }
+}
+
+.img{
+    width: 100vw;
+}
+
+.img img{
+    width: 100%;
+    margin: auto;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Flex Layout</h1>
+    <div class="img">
+<img src="WhatsApp Image 2024-03-25 at 08.31.35_e4ff097a.jpg" alt="">
+    </div>
+    <div class="contain">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+
+
+</body>
+
+</html>

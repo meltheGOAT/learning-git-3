@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation2</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            animation-name: demo;
+            animation-duration: 10s;
+            animation-delay: 3ms;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            
+            
+        }
+
+        @keyframes demo {
+            0% {
+                background-color: green;
+                transform: scale(0.4);
+                border-radius: 50%;
+            }
+            10% {
+                background-color: brown;
+               transform: translateY(200px);
+            }
+
+            20% {
+                background-color: seagreen;
+                border-radius: 0%;
+            
+            }
+            40% {
+                background-color: greenyellow;
+                /* border-radius: 10px; */
+            
+            }
+            50% {
+                transform: scale(1);
+                border-radius: 0%;
+                
+            }
+
+            60% {
+                background-color: aqua;
+            }
+            80% {
+                background-color: skyblue;
+            }
+            100% {
+                background-color: darkblue;
+                border-radius: 50%;
+                transform: scale(0.4);
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
